@@ -1,0 +1,11 @@
+@mixin estilo-msj($fondo_color, $tamanio_msj, $color_letra) {
+    
+
+
+    background-color: $fondo_color;
+    font-size: $tamanio_msj;
+    color: $color_letra;
+    text-align: center;
+     
+
+}

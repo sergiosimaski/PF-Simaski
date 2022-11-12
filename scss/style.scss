@@ -1,0 +1,586 @@
+@import "variables/variables";
+@import "componentes/galeria";
+@import "mixin/mixin";
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+header{
+    background-image: url(../img/masetas.jpg);
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color_letra;
+    text-align:center;
+    font-family: $tipografia2;
+    font-size: 80px;
+   
+    
+}
+
+nav{
+    
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    height: 100%;
+    z-index: 2;
+    ul{
+   
+    
+        list-style-type: none;
+        overflow: hidden;
+    }
+    li{
+        
+        float: left;
+       
+    }
+    
+}
+
+a{
+
+    font-size: 20px;
+    color:$color_letra;
+    font-family: $tipografia1;
+    text-decoration: none;
+    padding: 80px;
+    margin: 5px;
+    
+    
+
+
+}
+
+main{
+    
+    background-image: url(../img/lamparitas.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    p{
+        background-color: $color_bg;
+        color: $color_letra;
+        text-align: center;
+    }
+    h2{
+        color: $color_letra;
+        font-size: 40px;
+        text-align: center;
+        animation-name: test;
+        animation-duration: 5s;
+    
+    
+    }
+    
+    }
+
+    .btn--msj{
+        @include estilo-msj(black,25px ,red );
+        
+    }
+
+    footer{
+
+        background-color: black;
+        p{
+            color: white;
+            text-align: center;
+        }
+    
+    
+    }
+    
+    
+
+.foto22{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes test{
+
+    from{
+     opacity: 0;
+     }
+ 
+     to{
+         opacity: 1;
+     
+    }
+ }
+
+button{
+
+    background-color: black;
+    color: $color_letra;
+    font-size: 20px;
+}
+
+
+td{
+    font-size: 20px ;
+
+}
+
+th{
+    font-size: 30px;
+}
+
+table{
+    background-color: $color_bg;
+    border: 2px;
+
+}
+
+
+
+section{
+
+    p{
+        background-color: $color_bg;
+    }
+}
+
+
+
+img{
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.img_card1{
+
+    background-image: url(../img/tgt1.webp);
+    border-radius: 40px;
+    
+    transition: all 1s;
+    filter: grayscale(100%);
+    z-index: 1;
+      
+}
+
+.img_card1:hover{
+
+    filter: grayscale(0);
+    transform:scale(1.2 , 1.2);
+
+    background-image: url(../img/tgt1.webp);
+    z-index: 2;
+    
+}
+
+
+.img_card2{
+
+    background-image: url(../img/tgt1.webp);
+    border-radius: 40px;
+    
+    transition: all 1s;
+    filter: grayscale(100%);
+      
+}
+
+.img_card2:hover{
+
+    filter: grayscale(0);
+    transform:rotate(360deg);
+
+    background-image: url(../img/tgt1.webp);
+    
+}
+
+
+.img_card3{
+
+    background-image: url(../img/tgt1.webp);
+    border-radius: 40px;
+    
+    transition: all 1s;
+    filter: grayscale(100%);
+      
+}
+
+.img_card3:hover{
+
+    filter: grayscale(0);
+    transform:translate(-150px , 0px);
+    background-image: url(../img/tgt1.webp);
+    
+}
+
+
+
+.img_card4{
+
+    background-image: url(../img/tgt1.webp);
+    border-radius: 40px;
+    
+    transition: all 1s;
+    filter: grayscale(100%);
+      
+}
+
+.img_card4:hover{
+
+    filter: grayscale(0);
+    transform:translate(-150px , 0px);
+
+    background-image: url(../img/tgt1.webp);
+    
+}
+
+.img_ppal{
+
+    background-image: url(../proyecto/img/tgt2.webp);
+    transition: all 1s;
+
+}
+
+.img_ppal:hover{
+
+    transform: translate(300px);
+    background-image: url(../proyecto/img/tgt2.webp);
+
+
+
+
+}
+
+
+#cajon{
+
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 50px 50px 50px
+                           5opx 50px 50px;
+
+    
+    background-color:rgb(121, 191, 238); ;
+    
+    grid-template-areas: "a1 a2 a3"
+                         "a4 a5 a6";
+                         
+
+
+                         justify-items: center;
+
+                         align-items: center;
+                         justify-content: space-around;
+                         
+                         
+
+}
+
+
+#altacba{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+    grid-area: a1 ;
+    
+   
+
+
+}
+
+
+#bsas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    
+   
+    grid-area: a2;
+    
+
+
+
+}
+
+
+#tucuman{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    grid-area: a3;
+    
+    
+
+
+
+}
+
+#rosario{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    grid-area: a4;
+
+
+
+}
+
+#parana{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: a5;
+
+
+
+
+
+}
+
+
+#jujuy{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: a6;
+
+
+
+
+}
+#foto{
+
+    height: 30%;
+    width: 30%;
+}
+
+label{
+    color: $color_letra;
+}
+
+.link-home{
+    color: blue;
+}
+
+.link-galeria{
+    color: yellow;
+
+}
+
+.link-proyectos{
+
+    color: green;
+}
+
+.link-quienessomos{
+
+    color: blueviolet;
+}
+
+.link-contacto{
+
+    color: pink;
+}
+
+
+.galeria1{
+
+    width: $ancho_foto;
+    height: $alto_foto;
+}
+
+.galeria2{
+    width: $ancho_foto;
+    height: $alto_foto;
+}
+
+.galeria3{
+
+    width: $ancho_foto;
+    height: $alto_foto;
+}
+
+.galeria4{
+
+    width: $ancho_foto;
+    height: $alto_foto;
+}
+
+
+@media screen and (max-width:600px){
+
+    h1{
+        color: red;
+    }
+
+    .galeria1{
+
+        width: 50%;
+        height: 50%;
+    }
+
+    .galeria2{
+        width: 30%;
+        height: 30%;
+    }
+    
+    .galeria3{
+    
+        width: 30%;
+        height: 30%;
+    }
+    
+    .galeria4{
+    
+        width: 30%;
+        height: 30%;
+    }
+
+    #cajon{
+
+        display: grid;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 50px 50px 50px
+                               5opx 50px 50px;
+    
+        
+        background-color:rgb(121, 191, 238); ;
+        
+        grid-template-areas: "a1 a2"
+                             "a4 a5"
+                             "a3 a6";
+                             
+    
+    
+                             justify-items: center;
+    
+                             align-items: center;
+                             justify-content: space-around;
+                             
+                             
+    
+    }
+   
+
+
+}
+
+
+
+@media screen and (min-width:600px){
+
+    .img_card1{
+
+        background-image: url(../img/tgt1.webp);
+        border-radius: 40px;
+        
+        transition: all 1s;
+        filter: grayscale(100%);
+        z-index: 1;
+          
+    }
+    
+    .img_card1:hover{
+    
+        filter: grayscale(0);
+        transform:scale(1.2 , 1.2);
+    
+        background-image: url(../img/tgt1.webp);
+        z-index: 2;
+        
+    }
+    
+    
+    .img_card2{
+    
+        background-image: url(../img/tgt1.webp);
+        border-radius: 40px;
+        
+        transition: all 1s;
+        filter: grayscale(100%);
+          
+    }
+    
+    .img_card2:hover{
+    
+        filter: grayscale(0);
+        transform:scale(1.2 , 1.2);
+    
+        background-image: url(../img/tgt1.webp);
+        
+    }
+    
+    
+    .img_card3{
+    
+        background-image: url(../img/tgt1.webp);
+        border-radius: 40px;
+        
+        transition: all 1s;
+        filter: grayscale(100%);
+          
+    }
+    
+    .img_card3:hover{
+    
+        filter: grayscale(0);
+        transform:scale(1.2 , 1.2);
+        background-image: url(../img/tgt1.webp);
+        
+    }
+    
+    
+    
+    .img_card4{
+    
+        background-image: url(../img/tgt1.webp);
+        border-radius: 40px;
+        
+        transition: all 1s;
+        filter: grayscale(100%);
+          
+    }
+    
+    .img_card4:hover{
+    
+        filter: grayscale(0);
+        transform:scale(1.2 , 1.2);
+    
+        background-image: url(../img/tgt1.webp);
+        
+    }
+
+
+    
+}
+
+
+
